@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import java.io.FileReader;
@@ -10,7 +11,7 @@ import java.io.IOException;
 
 public class CSVRead {
 
-    //Provide CSV file path. It Is In D: Drive.
+    //Provide CSV file path. It Is In c: Drive..
     String CSV_PATH="C:\\Detail.csv";
 
     static WebDriver driver;
@@ -54,6 +55,11 @@ public class CSVRead {
             driver.findElement(By.xpath("//input[@value='Submit']")).click();
             driver.switchTo().alert().accept();
         }
+    }
+    @AfterTest
+    public void afterTest() {
+        System.out.println("After Test will always execute later to After Method, After Class ");
+        driver.quit();
     }
 
 }
