@@ -7,6 +7,36 @@
     <groupId>org.example</groupId>
     <artifactId>csvreader</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <jre.level>1.7</jre.level>
+        <jdk.level>1.7</jdk.level>
+    </properties>
+
+    <build>
+    <plugins>
+        <!-- Compiler plug-in -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>${jdk.level}</source>
+                <target>${jdk.level}</target>
+            </configuration>
+        </plugin>
+        <!-- Below plug-in is used to execute tests -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M5</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <!-- TestNG suite XML files -->
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -47,18 +77,5 @@
         </dependency>
 
     </dependencies>
-
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M5</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>testng.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
-    </plugins>
 
 </project>
