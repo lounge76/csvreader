@@ -8,8 +8,10 @@ public class HandelDriver {
 
     public WebDriver getDriver(String inDriver){
         if (inDriver.toUpperCase().equals("CHROME")){
-            System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\86\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C://Selenium//86//chromedriver.exe");
             driver = new ChromeDriver();
+
+
         } else {
             System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\gecko026\\geckodriver.exe");
             DesiredCapabilities dc = DesiredCapabilities.firefox();

@@ -1,9 +1,8 @@
 import com.opencsv.CSVReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.FileReader;
@@ -19,7 +18,7 @@ public class CSVRead {
 
     @BeforeTest
     public void setup() throws Exception {
-        driver = new ChromeDriver();
+        driver = new HandelDriver().getDriver("chrome");
         driver.manage().window().maximize();
         //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
