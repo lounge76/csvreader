@@ -39,7 +39,7 @@ public class CSVRead {
 
         CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
         String [] csvCell;
-        //while loop will be executed till the last line In CSV.
+        //while loop will be executed till the last line In CSV-.
         while ((csvCell = reader.readNext()) != null) {
             String FName = csvCell[0];
             String LName = csvCell[1];
