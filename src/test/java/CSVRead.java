@@ -11,7 +11,7 @@ import java.io.IOException;
 public class CSVRead {
 
     //Provide CSV file path. It Is In c: Drive..
-    String CSV_PATH="C:\\Detail.csv";
+    String CSV_PATH="C:\\Detail!!!.csv";
 
     static WebDriver driver;
 
@@ -26,7 +26,7 @@ public class CSVRead {
 
     @Test
     public void forstaTesten() {
-        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing!!!')]")).isDisplayed()) {
+        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
