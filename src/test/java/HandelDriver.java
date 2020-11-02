@@ -8,7 +8,7 @@ public class HandelDriver {
 
     public WebDriver getDriver(String inDriver){
         if (inDriver.toUpperCase().equals("CHROME")){
-            System.setProperty("webdriver.chrome.driver", "C://Selenium//86//chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
             driver = new ChromeDriver();
 
 

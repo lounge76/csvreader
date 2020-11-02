@@ -10,6 +10,10 @@
     <properties>
         <jre.level>1.7</jre.level>
         <jdk.level>1.7</jdk.level>
+
+        <wdm.mainClass>io.github.bonigarcia.wdm.WebDriverManager</wdm.mainClass>
+        <wdm.agentClass>io.github.bonigarcia.wdm.WdmAgent</wdm.agentClass>
+        <wdm.manifest>src/main/resources/META-INF/MANIFEST.MF</wdm.manifest>
     </properties>
 
     <build>
