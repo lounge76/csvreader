@@ -12,6 +12,9 @@ public class HandelDriver {
 
 
         } else {
+            //WebDriverManager.edgedriver().setup();
+            //driver = new EdgeDriver();
+            //OLD - WORKING
             System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
             //DesiredCapabilities dc = EdgeOptions.();
             //dc.setCapability("marionette", true);
@@ -21,3 +24,6 @@ public class HandelDriver {
     }
 
 }
+
+
+
