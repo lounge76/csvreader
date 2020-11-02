@@ -11,7 +11,7 @@ import java.io.IOException;
 public class CSVRead {
 
     //Provide CSV file path. It Is In c: Drive..
-    String CSV_PATH="C:\\Detail.csv";
+    String CSV_PATH="./Excel/Detail.csv";
 
     static WebDriver driver;
 
