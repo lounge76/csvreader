@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-02T13:44:48 CET" name="Example test run" finished-at="2020-11-02T13:45:11 CET" duration-ms="22665">
+  <suite started-at="2020-11-02T14:01:32 CET" name="Example test run" finished-at="2020-11-02T14:01:53 CET" duration-ms="21098">
     <groups>
     </groups>
-    <test started-at="2020-11-02T13:44:48 CET" name="Simple Test" finished-at="2020-11-02T13:45:11 CET" duration-ms="22665">
+    <test started-at="2020-11-02T14:01:32 CET" name="Simple Test" finished-at="2020-11-02T14:01:53 CET" duration-ms="21098">
       <class name="CSVRead">
-        <test-method is-config="true" signature="setup()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T13:44:48 CET" name="setup" finished-at="2020-11-02T13:44:57 CET" duration-ms="9176" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T14:01:32 CET" name="setup" finished-at="2020-11-02T14:01:41 CET" duration-ms="8891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="csvDataRead()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T13:44:57 CET" name="csvDataRead" finished-at="2020-11-02T13:45:07 CET" duration-ms="9931" status="PASS">
+        <test-method signature="csvDataRead()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T14:01:41 CET" name="csvDataRead" finished-at="2020-11-02T14:01:51 CET" duration-ms="9419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- csvDataRead -->
-        <test-method signature="forstaTesten()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T13:45:07 CET" name="forstaTesten" finished-at="2020-11-02T13:45:09 CET" duration-ms="1806" status="PASS">
+        <test-method signature="forstaTesten()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T14:01:51 CET" name="forstaTesten" finished-at="2020-11-02T14:01:52 CET" duration-ms="1233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forstaTesten -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T13:45:09 CET" name="afterTest" finished-at="2020-11-02T13:45:11 CET" duration-ms="1667" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:CSVRead@5e5d171f]" started-at="2020-11-02T14:01:52 CET" name="afterTest" finished-at="2020-11-02T14:01:53 CET" duration-ms="1458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

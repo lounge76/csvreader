@@ -99,5 +99,29 @@
         </dependency>
 
     </dependencies>
+    <repositories>
+        <repository>
+            <id>fredrikkihlman</id>
+            <url>https://pkgs.dev.azure.com/fredrikkihlman/_packaging/fredrikkihlman/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>fredrikkihlman</id>
+            <url>https://pkgs.dev.azure.com/fredrikkihlman/_packaging/fredrikkihlman/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </distributionManagement>
 
 </project>
