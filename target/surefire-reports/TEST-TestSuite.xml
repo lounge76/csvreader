@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="23.359" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="25.668" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
     <property name="java.specification.version" value="11"/>
     <property name="webdriver.chrome.driver" value="./Drivers/chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -19,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.4\bin"/>
-    <property name="sun.java.command" value="C:\Users\frekih\AppData\Local\Temp\surefire13987784080568975640\surefirebooter8568319911635691451.jar C:\Users\frekih\AppData\Local\Temp\surefire13987784080568975640 2020-11-02T14-01-29_069-jvmRun1 surefire7988916412126983429tmp surefire_011409155361822622427tmp"/>
+    <property name="sun.java.command" value="C:\Users\frekih\AppData\Local\Temp\surefire3505723881863479939\surefirebooter11446961561601402955.jar C:\Users\frekih\AppData\Local\Temp\surefire3505723881863479939 2020-11-02T14-24-17_593-jvmRun1 surefire10508424500686015535tmp surefire_010243602403998213429tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\frekih\Git\csvreader\target\test-classes;C:\Users\frekih\Git\csvreader\target\classes;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\frekih\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\frekih\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\frekih\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\frekih\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\frekih\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\frekih\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\frekih\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\frekih\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\frekih\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\frekih\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\frekih\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\frekih\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\frekih\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\frekih\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\frekih\.m2\repository\com\opencsv\opencsv\3.3\opencsv-3.3.jar;C:\Users\frekih\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\frekih\.m2\repository\org\testng\testng\7.0.0\testng-7.0.0.jar;C:\Users\frekih\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\frekih\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\frekih\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -35,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\frekih\AppData\Local\Temp\surefire13987784080568975640\surefirebooter8568319911635691451.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\frekih\AppData\Local\Temp\surefire3505723881863479939\surefirebooter11446961561601402955.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.4+10-LTS"/>
@@ -62,6 +61,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="csvDataRead" classname="CSVRead" time="9.425"/>
-  <testcase name="forstaTesten" classname="CSVRead" time="1.236"/>
+  <testcase name="csvDataRead" classname="CSVRead" time="10.75"/>
+  <testcase name="forstaTesten" classname="CSVRead" time="1.258"/>
 </testsuite>

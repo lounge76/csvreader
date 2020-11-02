@@ -1,7 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class HandelDriver {
     WebDriver driver;
@@ -13,10 +12,10 @@ public class HandelDriver {
 
 
         } else {
-            System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\gecko026\\geckodriver.exe");
-            DesiredCapabilities dc = DesiredCapabilities.firefox();
-            dc.setCapability("marionette", true);
-            driver = new FirefoxDriver();
+            System.setProperty("webdriver.edge.driver", "./Drivers/msedgedriver.exe");
+            //DesiredCapabilities dc = EdgeOptions.();
+            //dc.setCapability("marionette", true);
+            driver = new EdgeDriver();
         }
         return driver;
     }

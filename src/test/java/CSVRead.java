@@ -18,7 +18,7 @@ public class CSVRead {
 
     @BeforeTest
     public void setup() throws Exception {
-        driver = new HandelDriver().getDriver("chrome");
+        driver = new HandelDriver().getDriver("edge");
         driver.manage().window().maximize();
         //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
