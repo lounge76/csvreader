@@ -32,11 +32,14 @@ public class CSVRead {
     }
 
     @Test
-    public void forstaTesten() {
-        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
+     public void Syns_texten() throws IOException {
+        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing!!!')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
+            Screenshot screenshot = new AShot().takeScreenshot(driver);
+            ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/Texterror_"+System.currentTimeMillis()+".png"));
+
         }
 
     }
@@ -66,7 +69,7 @@ public class CSVRead {
     @Test
     public void Screenshot() throws IOException {
         Screenshot screenshot = new AShot().takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(), "jpg", new File(".\\Screenshots\\screenshot_"+System.currentTimeMillis()+".jpg"));
+        ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_"+System.currentTimeMillis()+".png"));
 
     }
 
