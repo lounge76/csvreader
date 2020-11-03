@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Example_test_run" class="show-methods failed suite-Example_test_run"> (show)</a> <!-- show-methods failed suite-Example_test_run -->
                     </span>
                     <div class="method-list-content failed suite-Example_test_run">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="CSVRead" class="method navigator-link" hash-for-method="Syns_texten">Syns_texten</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Example_test_run" title="CSVRead" class="method navigator-link" hash-for-method="csvDataRead">csvDataRead</a> <!-- method navigator-link -->
@@ -127,6 +122,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Example_test_run" title="CSVRead" class="method navigator-link" hash-for-method="Screenshot">Screenshot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Example_test_run" title="CSVRead" class="method navigator-link" hash-for-method="Syns_texten">Syns_texten</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -164,36 +164,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Syns_texten">
-                  </a> <!-- Syns_texten -->
-                  <span class="method-name">Syns_texten</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(.,&apos;Only Testing&apos;)]&quot;}
-  (Session info: chrome=86.0.4240.111)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;136-FREKIH&apos;, ip: &apos;192.168.1.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:19484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 320b87af5e7f92ac2bdddbdcb5797d23
-*** Element info: {Using=xpath, value=//a[contains(.,&apos;Only Testing&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at CSVRead.Syns_texten(CSVRead.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="csvDataRead">
                   </a> <!-- csvDataRead -->
                   <span class="method-name">csvDataRead</span>
@@ -208,7 +178,7 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at CSVRead.csvDataRead(CSVRead.java:60)
+	at CSVRead.csvDataRead(CSVRead.java:58)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -256,6 +226,13 @@ Driver info: driver.version: RemoteWebDriver
                   <a name="Screenshot">
                   </a> <!-- Screenshot -->
                   <span class="method-name">Screenshot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Syns_texten">
+                  </a> <!-- Syns_texten -->
+                  <span class="method-name">Syns_texten</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -322,38 +299,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Syns_texten')
+data.setCell(0, 1, 'Screenshot')
 data.setCell(0, 2, 'CSVRead')
-data.setCell(0, 3, 5073);
+data.setCell(0, 3, 2933);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'afterTest')
 data.setCell(1, 2, 'CSVRead')
-data.setCell(1, 3, 976);
+data.setCell(1, 3, 994);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Screenshot')
+data.setCell(2, 1, 'Syns_texten')
 data.setCell(2, 2, 'CSVRead')
-data.setCell(2, 3, 646);
+data.setCell(2, 3, 81);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verify_button_displayed')
+data.setCell(3, 1, 'Click_buttons')
 data.setCell(3, 2, 'Button_test')
-data.setCell(3, 3, 69);
+data.setCell(3, 3, 78);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Click_buttons')
+data.setCell(4, 1, 'Verify_button_displayed')
 data.setCell(4, 2, 'Button_test')
-data.setCell(4, 3, 58);
+data.setCell(4, 3, 36);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Verify_button_state')
 data.setCell(5, 2, 'Button_test')
-data.setCell(5, 3, 33);
+data.setCell(5, 3, 34);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'csvDataRead')
 data.setCell(6, 2, 'CSVRead')
-data.setCell(6, 3, 8);
+data.setCell(6, 3, 15);
 window.suiteTableData['Example_test_run']= { tableData: data, tableDiv: 'times-div-Example_test_run'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Example_test_run">
               </div> <!-- times-div-Example_test_run -->
             </div> <!-- times-div -->
@@ -389,53 +366,51 @@ return data;
               <div class="chronological-class-name">CSVRead</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7213 ms</span>
+                <span class="method-start">7173 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Screenshot</span>
-                <span class="method-start">13989 ms</span>
+                <span class="method-start">14909 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Syns_texten</span>
-                <span class="method-start">14637 ms</span>
+                <span class="method-start">17845 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">19736 ms</span>
+                <span class="method-start">17926 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">csvDataRead</span>
-                <span class="method-start">20713 ms</span>
+                <span class="method-start">18921 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Button_test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Click_buttons</span>
-                <span class="method-start">20724 ms</span>
+                <span class="method-start">18947 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Verify_button_displayed</span>
-                <span class="method-start">20783 ms</span>
+                <span class="method-start">19025 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Verify_button_state</span>
-                <span class="method-start">20852 ms</span>
+                <span class="method-start">19061 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">20885 ms</span>
+                <span class="method-start">19095 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CSVRead</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">21868 ms</span>
+                <span class="method-start">20073 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
