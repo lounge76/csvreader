@@ -27,7 +27,7 @@ public class CSVRead {
 
     @Test
     public void forstaTesten() {
-        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
+        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing!!')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
