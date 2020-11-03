@@ -18,16 +18,16 @@ public class CSVRead {
 
     @BeforeTest
     public void setup() throws Exception {
-        driver = new HandelDriver().getDriver("edge");
+        driver = new HandelDriver().getDriver("CHROME");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
     }
 
     @Test
     public void forstaTesten() {
-        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing!!')]")).isDisplayed()) {
+        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
@@ -61,8 +61,8 @@ public class CSVRead {
 
         @AfterTest
     public void afterTest() {
-        System.out.println("After Test will always execute later to After Method, After Class ");
-        //driver.quit();
+        System.out.println("After Test will always execute later to After Method, After Class, Test ");
+        driver.quit();
     }
 
 }
