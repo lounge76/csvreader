@@ -78,7 +78,7 @@ public class CSVRead {
 
         @AfterTest
     public void afterTest() {
-        System.out.println("After Test will always execute later to After Method, After Class, Test ");
+        System.out.println("CSV: Driver close");
         driver.close();
     }
 

@@ -68,7 +68,7 @@ public class Button_test {
 
         @AfterTest
     public void afterTest() {
-        System.out.println("After Test: test is Done!");
+        System.out.println("Button: Driver close");
         driver.close();
     }
 
