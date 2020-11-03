@@ -11,6 +11,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class CSVRead {
 
@@ -25,8 +26,8 @@ public class CSVRead {
         driver = new HandelDriver().getDriver("CHROME");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
 
     }
@@ -70,8 +71,10 @@ public class CSVRead {
     public void Screenshot() throws IOException {
         Screenshot screenshot = new AShot().takeScreenshot(driver);
         ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_"+System.currentTimeMillis()+".png"));
-
     }
+
+
+    @Test
 
 
 
