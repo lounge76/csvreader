@@ -1,17 +1,23 @@
 import com.opencsv.CSVReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.TestMethodOrder;
 
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 public class CSVRead {
 
@@ -27,13 +33,15 @@ public class CSVRead {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+        //driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
 
     }
 
     @Test
-     public void Syns_texten() throws IOException {
+    @Order(2)
+    public void Syns_texten() throws IOException {
+        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
         if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
@@ -44,7 +52,9 @@ public class CSVRead {
     }
 
     @Test
+    @Order(4)
     public void csvDataRead() throws IOException {
+        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
         CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
         String [] csvCell;
@@ -66,13 +76,24 @@ public class CSVRead {
     }
 
     @Test
+    @Order(3)
     public void Screenshot() throws IOException {
+        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+
         Screenshot screenshot = new AShot().takeScreenshot(driver);
         ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_"+System.currentTimeMillis()+".png"));
     }
 
 
     @Test
+    @Order(1)
+    public void Click_buttons() throws IOException {
+        driver.get("http://test.rubywatir.com/radios.php");
+        WebElement radioId = driver.findElement(By.id("radioId"));
+
+        radioId.click();
+        System.out.println("Radio Button with ID Selected");
+    }
 
 
 
