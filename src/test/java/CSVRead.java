@@ -27,7 +27,7 @@ public class CSVRead {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
 
     }
@@ -38,8 +38,6 @@ public class CSVRead {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
-            Screenshot screenshot = new AShot().takeScreenshot(driver);
-            ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/Texterror_"+System.currentTimeMillis()+".png"));
 
         }
 
