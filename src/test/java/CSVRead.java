@@ -40,7 +40,7 @@ public class CSVRead {
 
     @Test
     @Order(2)
-    public void Syns_texten() throws IOException {
+    public void Syns_texten2() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
         if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
@@ -53,7 +53,7 @@ public class CSVRead {
 
     @Test
     @Order(4)
-    public void csvDataRead() throws IOException {
+    public void csvDataRead4() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
         CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
@@ -77,7 +77,7 @@ public class CSVRead {
 
     @Test
     @Order(3)
-    public void Screenshot() throws IOException {
+    public void Screenshot3() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
         Screenshot screenshot = new AShot().takeScreenshot(driver);
@@ -87,7 +87,7 @@ public class CSVRead {
 
     @Test
     @Order(1)
-    public void Click_buttons() throws IOException {
+    public void Click_buttons1() throws IOException {
         driver.get("http://test.rubywatir.com/radios.php");
         WebElement radioId = driver.findElement(By.id("radioId"));
 

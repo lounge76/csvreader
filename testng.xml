@@ -3,7 +3,7 @@
     <test name="Simple Test">
         <classes>
             <class name="CSVRead"/>
-            <class name="Button_test"/>
+            <!-- <class name="Button_test"/> -->
         </classes>
     </test>
 </suite>
