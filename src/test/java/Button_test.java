@@ -27,16 +27,17 @@ public class Button_test {
 
     }
 
-    @Test
-     public void Click_buttons() throws IOException {
+    @Test (priority = 53)
+
+     public void Click_buttons53() throws IOException {
         WebElement radioId = driver.findElement(By.id("radioId"));
 
         radioId.click();
-        System.out.println("Radio Button with ID Selected");
+        System.out.println(" 53 Radio Button with ID Selected");
     }
 
-    @Test
-    public void Verify_button_state() throws IOException {
+    @Test (priority = 52)
+    public void Verify_button_state52() throws IOException {
 
         /**
          * Validate Radio button using isSelected() method
@@ -51,8 +52,8 @@ public class Button_test {
         }
     }
 
-    @Test
-    public void Verify_button_displayed() throws IOException {
+    @Test (priority = 51)
+    public void Verify_button_displayed51() throws IOException {
         /**
          * Validate Radio button using isDisplayed() method
          */
@@ -68,7 +69,7 @@ public class Button_test {
 
         @AfterTest
     public void afterTest() {
-        System.out.println("Button: Driver close");
+        System.out.println("after 54 Button: Driver close");
         driver.close();
     }
 

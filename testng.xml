@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run">
-    <test name="Simple Test">
+    <test thread-count="5" name="Simple Test" preserve-order="true">
         <classes>
             <class name="CSVRead"/>
+            <class name="Button_test"/>
             <!-- <class name="Button_test"/> -->
         </classes>
     </test>

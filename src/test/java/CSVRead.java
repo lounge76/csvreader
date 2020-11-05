@@ -1,4 +1,6 @@
 import com.opencsv.CSVReader;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,9 +9,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.TestMethodOrder;
 
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -38,9 +37,8 @@ public class CSVRead {
 
     }
 
-    @Test
-    @Order(2)
-    public void Syns_texten2() throws IOException {
+    @Test (priority = 4)
+    public void Syns_texten4() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
         if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
@@ -51,9 +49,8 @@ public class CSVRead {
 
     }
 
-    @Test
-    @Order(4)
-    public void csvDataRead4() throws IOException {
+    @Test  (priority = 2)
+    public void csvDataRead2() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
         CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
@@ -75,8 +72,8 @@ public class CSVRead {
         }
     }
 
-    @Test
-    @Order(3)
+    @Test (priority = 3)
+
     public void Screenshot3() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
@@ -85,8 +82,7 @@ public class CSVRead {
     }
 
 
-    @Test
-    @Order(1)
+    @Test  (priority = 1)
     public void Click_buttons1() throws IOException {
         driver.get("http://test.rubywatir.com/radios.php");
         WebElement radioId = driver.findElement(By.id("radioId"));

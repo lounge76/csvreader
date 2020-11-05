@@ -9,51 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Example test run</th></tr>
-<tr><td><a href="#t0">Simple Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15 986</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Simple Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31 840</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Example test run</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Simple Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">CSVRead</td><td><a href="#m0">afterTest</a></td><td rowspan="1">1604413747249</td><td rowspan="1">17</td></tr><tr><th colspan="4">Simple Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">CSVRead</td><td><a href="#m1">csvDataRead</a></td><td rowspan="1">1604413746526</td><td rowspan="1">92</td></tr><tr><th colspan="4">Simple Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Button_test</td><td><a href="#m2">Click_buttons</a></td><td rowspan="1">1604413746633</td><td rowspan="1">133</td></tr><tr class="passedeven"><td><a href="#m3">Verify_button_displayed</a></td><td rowspan="1">1604413746767</td><td rowspan="1">57</td></tr><tr class="passedeven"><td><a href="#m4">Verify_button_state</a></td><td rowspan="1">1604413746825</td><td rowspan="1">34</td></tr><tr class="passedodd"><td rowspan="3">CSVRead</td><td><a href="#m5">Screenshot</a></td><td rowspan="1">1604413745042</td><td rowspan="1">800</td></tr><tr class="passedodd"><td><a href="#m6">Syns_texten</a></td><td rowspan="1">1604413745844</td><td rowspan="1">90</td></tr><tr class="passedodd"><td><a href="#m7">afterTest</a></td><td rowspan="1">1604413745935</td><td rowspan="1">591</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Example test run</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Simple Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Button_test</td><td><a href="#m0">Click_buttons</a></td><td rowspan="1">1604587444451</td><td rowspan="1">105</td></tr><tr class="passedeven"><td><a href="#m1">Verify_button_displayed</a></td><td rowspan="1">1604587444170</td><td rowspan="1">135</td></tr><tr class="passedeven"><td><a href="#m2">Verify_button_state</a></td><td rowspan="1">1604587444306</td><td rowspan="1">143</td></tr><tr class="passedodd"><td rowspan="4">CSVRead</td><td><a href="#m3">Click_buttons1</a></td><td rowspan="1">1604587428222</td><td rowspan="1">522</td></tr><tr class="passedodd"><td><a href="#m4">Screenshot3</a></td><td rowspan="1">1604587439185</td><td rowspan="1">3680</td></tr><tr class="passedodd"><td><a href="#m5">Syns_texten2</a></td><td rowspan="1">1604587442866</td><td rowspan="1">1298</td></tr><tr class="passedodd"><td><a href="#m6">csvDataRead4</a></td><td rowspan="1">1604587428751</td><td rowspan="1">10430</td></tr></tbody>
 </table>
-<h2>Simple Test</h2><h3 id="m0">CSVRead#afterTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;136-FREKIH&apos;, ip: &apos;192.168.1.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:1246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8d27be0ef3084da9116edeafbec5e5d
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at CSVRead.afterTest(CSVRead.java:82)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">CSVRead#csvDataRead</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;136-FREKIH&apos;, ip: &apos;192.168.1.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:1246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8d27be0ef3084da9116edeafbec5e5d
-*** Element info: {Using=xpath, value=//input[@name=&apos;FirstName&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at CSVRead.csvDataRead(CSVRead.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Button_test#Click_buttons</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Button_test#Verify_button_displayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Button_test#Verify_button_state</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">CSVRead#Screenshot</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">CSVRead#Syns_texten</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">CSVRead#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Simple Test</h2><h3 id="m0">Button_test#Click_buttons</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Button_test#Verify_button_displayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Button_test#Verify_button_state</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">CSVRead#Click_buttons1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">CSVRead#Screenshot3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">CSVRead#Syns_texten2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">CSVRead#csvDataRead4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

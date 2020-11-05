@@ -1,183 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-03T15:28:51 CET" name="Example test run" finished-at="2020-11-03T15:29:07 CET" duration-ms="15986">
+  <suite started-at="2020-11-05T15:43:34 CET" name="Example test run" finished-at="2020-11-05T15:44:06 CET" duration-ms="31840">
     <groups>
     </groups>
-    <test started-at="2020-11-03T15:28:51 CET" name="Simple Test" finished-at="2020-11-03T15:29:07 CET" duration-ms="15986">
+    <test started-at="2020-11-05T15:43:34 CET" name="Simple Test" finished-at="2020-11-05T15:44:06 CET" duration-ms="31840">
       <class name="Button_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Button_test@70325e14]" started-at="2020-11-03T15:28:51 CET" name="setup" finished-at="2020-11-03T15:28:58 CET" duration-ms="6938" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:43:34 CET" name="setup" finished-at="2020-11-05T15:43:42 CET" duration-ms="7494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Click_buttons()[pri:0, instance:Button_test@70325e14]" started-at="2020-11-03T15:29:06 CET" name="Click_buttons" finished-at="2020-11-03T15:29:06 CET" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Click_buttons -->
-        <test-method signature="Verify_button_displayed()[pri:0, instance:Button_test@70325e14]" started-at="2020-11-03T15:29:06 CET" name="Verify_button_displayed" finished-at="2020-11-03T15:29:06 CET" duration-ms="57" status="PASS">
+        <test-method signature="Verify_button_displayed()[pri:51, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="Verify_button_displayed" finished-at="2020-11-05T15:44:04 CET" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_button_displayed -->
-        <test-method signature="Verify_button_state()[pri:0, instance:Button_test@70325e14]" started-at="2020-11-03T15:29:06 CET" name="Verify_button_state" finished-at="2020-11-03T15:29:06 CET" duration-ms="34" status="PASS">
+        <test-method signature="Verify_button_state()[pri:52, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="Verify_button_state" finished-at="2020-11-05T15:44:04 CET" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_button_state -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Button_test@70325e14]" started-at="2020-11-03T15:29:06 CET" name="afterTest" finished-at="2020-11-03T15:29:07 CET" duration-ms="390" status="PASS">
+        <test-method signature="Click_buttons()[pri:53, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="Click_buttons" finished-at="2020-11-05T15:44:04 CET" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_buttons -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="afterTest" finished-at="2020-11-05T15:44:05 CET" duration-ms="1019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- Button_test -->
       <class name="CSVRead">
-        <test-method is-config="true" signature="setup()[pri:0, instance:CSVRead@23348b5d]" started-at="2020-11-03T15:28:58 CET" name="setup" finished-at="2020-11-03T15:29:05 CET" duration-ms="6781" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:42 CET" name="setup" finished-at="2020-11-05T15:43:48 CET" duration-ms="5875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Screenshot()[pri:0, instance:CSVRead@23348b5d]" started-at="2020-11-03T15:29:05 CET" name="Screenshot" finished-at="2020-11-03T15:29:05 CET" duration-ms="800" status="PASS">
+        <test-method signature="Click_buttons1()[pri:1, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:48 CET" name="Click_buttons1" finished-at="2020-11-05T15:43:48 CET" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Screenshot -->
-        <test-method signature="Syns_texten()[pri:0, instance:CSVRead@23348b5d]" started-at="2020-11-03T15:29:05 CET" name="Syns_texten" finished-at="2020-11-03T15:29:05 CET" duration-ms="90" status="PASS">
+        </test-method> <!-- Click_buttons1 -->
+        <test-method signature="csvDataRead4()[pri:2, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:48 CET" name="csvDataRead4" finished-at="2020-11-05T15:43:59 CET" duration-ms="10430" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Syns_texten -->
-        <test-method signature="afterTest()[pri:0, instance:CSVRead@23348b5d]" started-at="2020-11-03T15:29:05 CET" name="afterTest" finished-at="2020-11-03T15:29:06 CET" duration-ms="591" status="PASS">
+        </test-method> <!-- csvDataRead4 -->
+        <test-method signature="Screenshot3()[pri:3, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:59 CET" name="Screenshot3" finished-at="2020-11-05T15:44:02 CET" duration-ms="3680" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method signature="csvDataRead()[pri:0, instance:CSVRead@23348b5d]" started-at="2020-11-03T15:29:06 CET" name="csvDataRead" finished-at="2020-11-03T15:29:06 CET" duration-ms="92" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '136-FREKIH', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:1246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8d27be0ef3084da9116edeafbec5e5d
-*** Element info: {Using=xpath, value=//input[@name='FirstName']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '136-FREKIH', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:1246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8d27be0ef3084da9116edeafbec5e5d
-*** Element info: {Using=xpath, value=//input[@name='FirstName']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at CSVRead.csvDataRead(CSVRead.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        </test-method> <!-- Screenshot3 -->
+        <test-method signature="Syns_texten2()[pri:4, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:44:02 CET" name="Syns_texten2" finished-at="2020-11-05T15:44:04 CET" duration-ms="1298" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- csvDataRead -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:CSVRead@23348b5d]" started-at="2020-11-03T15:29:07 CET" name="afterTest" finished-at="2020-11-03T15:29:07 CET" duration-ms="17" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '136-FREKIH', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:1246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8d27be0ef3084da9116edeafbec5e5d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '136-FREKIH', ip: '192.168.1.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\frekih\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:1246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d8d27be0ef3084da9116edeafbec5e5d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at CSVRead.afterTest(CSVRead.java:82)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-at org.testng.TestRunner.afterRun(TestRunner.java:853)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        </test-method> <!-- Syns_texten2 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:44:05 CET" name="afterTest" finished-at="2020-11-05T15:44:06 CET" duration-ms="1058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
