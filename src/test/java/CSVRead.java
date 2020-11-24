@@ -91,12 +91,18 @@ public class CSVRead {
         System.out.println("Radio Button with ID Selected");
     }
 
-
-
-        @AfterTest
-    public void afterTest() {
-        System.out.println("CSV: Driver close");
+    @Test  (priority = 7)
+    public void AfterTest_7() throws IOException {
+        System.out.println("After test7 : Driver close");
         driver.close();
+    }
+
+
+
+    @AfterTest
+    public void afterTest() {
+        //System.out.println("After test7 : Driver close");
+        //driver.close();
     }
 
 }

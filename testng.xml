@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Example test run">
-    <test thread-count="5" name="Simple Test" preserve-order="true">
+<suite name="Example test run" parallel="false" thread-count="1">
+    <test name="Simple Test">
         <classes>
             <class name="CSVRead"/>
             <class name="Button_test"/>

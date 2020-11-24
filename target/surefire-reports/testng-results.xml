@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-05T15:43:34 CET" name="Example test run" finished-at="2020-11-05T15:44:06 CET" duration-ms="31840">
+  <suite started-at="2020-11-05T16:19:33 CET" name="Example test run" finished-at="2020-11-05T16:20:07 CET" duration-ms="33834">
     <groups>
     </groups>
-    <test started-at="2020-11-05T15:43:34 CET" name="Simple Test" finished-at="2020-11-05T15:44:06 CET" duration-ms="31840">
+    <test started-at="2020-11-05T16:19:33 CET" name="Simple Test" finished-at="2020-11-05T16:20:07 CET" duration-ms="33834">
       <class name="Button_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:43:34 CET" name="setup" finished-at="2020-11-05T15:43:42 CET" duration-ms="7494" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Button_test@1f59a598]" started-at="2020-11-05T16:19:33 CET" name="setup" finished-at="2020-11-05T16:19:41 CET" duration-ms="7925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_button_displayed()[pri:51, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="Verify_button_displayed" finished-at="2020-11-05T15:44:04 CET" duration-ms="135" status="PASS">
+        <test-method signature="Verify_button_displayed51()[pri:51, instance:Button_test@1f59a598]" started-at="2020-11-05T16:20:06 CET" name="Verify_button_displayed51" finished-at="2020-11-05T16:20:06 CET" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_button_displayed -->
-        <test-method signature="Verify_button_state()[pri:52, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="Verify_button_state" finished-at="2020-11-05T15:44:04 CET" duration-ms="143" status="PASS">
+        </test-method> <!-- Verify_button_displayed51 -->
+        <test-method signature="Verify_button_state52()[pri:52, instance:Button_test@1f59a598]" started-at="2020-11-05T16:20:06 CET" name="Verify_button_state52" finished-at="2020-11-05T16:20:06 CET" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_button_state -->
-        <test-method signature="Click_buttons()[pri:53, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="Click_buttons" finished-at="2020-11-05T15:44:04 CET" duration-ms="105" status="PASS">
+        </test-method> <!-- Verify_button_state52 -->
+        <test-method signature="Click_buttons53()[pri:53, instance:Button_test@1f59a598]" started-at="2020-11-05T16:20:06 CET" name="Click_buttons53" finished-at="2020-11-05T16:20:06 CET" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Click_buttons -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Button_test@1e66f1f5]" started-at="2020-11-05T15:44:04 CET" name="afterTest" finished-at="2020-11-05T15:44:05 CET" duration-ms="1019" status="PASS">
+        </test-method> <!-- Click_buttons53 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Button_test@1f59a598]" started-at="2020-11-05T16:20:06 CET" name="afterTest" finished-at="2020-11-05T16:20:07 CET" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- Button_test -->
       <class name="CSVRead">
-        <test-method is-config="true" signature="setup()[pri:0, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:42 CET" name="setup" finished-at="2020-11-05T15:43:48 CET" duration-ms="5875" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:19:41 CET" name="setup" finished-at="2020-11-05T16:19:47 CET" duration-ms="5962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Click_buttons1()[pri:1, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:48 CET" name="Click_buttons1" finished-at="2020-11-05T15:43:48 CET" duration-ms="522" status="PASS">
+        <test-method signature="Click_buttons1()[pri:1, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:19:47 CET" name="Click_buttons1" finished-at="2020-11-05T16:19:48 CET" duration-ms="737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Click_buttons1 -->
-        <test-method signature="csvDataRead4()[pri:2, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:48 CET" name="csvDataRead4" finished-at="2020-11-05T15:43:59 CET" duration-ms="10430" status="PASS">
+        <test-method signature="csvDataRead2()[pri:2, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:19:48 CET" name="csvDataRead2" finished-at="2020-11-05T16:19:59 CET" duration-ms="10952" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- csvDataRead4 -->
-        <test-method signature="Screenshot3()[pri:3, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:43:59 CET" name="Screenshot3" finished-at="2020-11-05T15:44:02 CET" duration-ms="3680" status="PASS">
+        </test-method> <!-- csvDataRead2 -->
+        <test-method signature="Screenshot3()[pri:3, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:19:59 CET" name="Screenshot3" finished-at="2020-11-05T16:20:03 CET" duration-ms="3923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Screenshot3 -->
-        <test-method signature="Syns_texten2()[pri:4, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:44:02 CET" name="Syns_texten2" finished-at="2020-11-05T15:44:04 CET" duration-ms="1298" status="PASS">
+        <test-method signature="Syns_texten4()[pri:4, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:20:03 CET" name="Syns_texten4" finished-at="2020-11-05T16:20:05 CET" duration-ms="2136" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Syns_texten2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:CSVRead@5fbe4146]" started-at="2020-11-05T15:44:05 CET" name="afterTest" finished-at="2020-11-05T15:44:06 CET" duration-ms="1058" status="PASS">
+        </test-method> <!-- Syns_texten4 -->
+        <test-method signature="AfterTest_7()[pri:7, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:20:05 CET" name="AfterTest_7" finished-at="2020-11-05T16:20:06 CET" duration-ms="961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest_7 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:CSVRead@7ee8290b]" started-at="2020-11-05T16:20:07 CET" name="afterTest" finished-at="2020-11-05T16:20:07 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
