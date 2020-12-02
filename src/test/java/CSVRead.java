@@ -14,17 +14,22 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.concurrent.TimeUnit;
+
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
 public class CSVRead {
 
+
     //Provide CSV file path. It Is In c: Drive..
     String CSV_PATH="./Excel/Detail.csv";
 
     static WebDriver driver;
+    static String text;
 
+    PrintStream o = new PrintStream(new File("./logs/A.txt"));
 
     @BeforeTest
     public void setup() throws Exception {
@@ -32,25 +37,51 @@ public class CSVRead {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
-
-
     }
 
-    @Test (priority = 4)
-    public void Syns_texten4() throws IOException {
+    @Test (priority = 1)
+    public void Syns_texten() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
         if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
-
         }
-
     }
 
-    @Test  (priority = 2)
-    public void csvDataRead2() throws IOException {
+
+
+    @Test (priority = 2)
+    public void Screenshot() throws IOException {
+        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+
+        Screenshot screenshot = new AShot().takeScreenshot(driver);
+        ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_"+System.currentTimeMillis()+".png"));
+    }
+
+
+    @Test  (priority = 3)
+    public void Click_buttons_verify_value() throws IOException {
+        driver.get("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
+        WebElement radioIdMale = driver.findElement(By.xpath("//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/label[1]/input"));
+
+        radioIdMale.click();
+        System.out.println("Radio Button with ID Selected");
+        driver.findElement(By.id("buttoncheck")).click();
+
+        text = driver.findElement(By.xpath("//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/p[3]")).getText();
+        System.out.println("Text String is : "+ text);
+
+        // Assign o to output stream
+        System.setOut(o);
+        System.out.println("This will be written to the text file");
+    }
+
+
+
+
+    @Test  (priority = 4)
+    public void csvDataRead() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
 
         CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
@@ -67,42 +98,21 @@ public class CSVRead {
             driver.findElement(By.xpath("//input[@name='EmailID']")).sendKeys(Email);
             driver.findElement(By.xpath("//input[@name='MobNo']")).sendKeys(Mob);
             driver.findElement(By.xpath("//input[@name='Company']")).sendKeys(company);
-            driver.findElement(By.xpath("//input[@value='Submit']")).click();
-            driver.switchTo().alert().accept();
+
+            Screenshot screenshot = new AShot().takeScreenshot(driver);
+            ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_FILLED_FORM"+System.currentTimeMillis()+".png"));
         }
     }
 
-    @Test (priority = 3)
-
-    public void Screenshot3() throws IOException {
-        driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
-
-        Screenshot screenshot = new AShot().takeScreenshot(driver);
-        ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_"+System.currentTimeMillis()+".png"));
-    }
-
-
-    @Test  (priority = 1)
-    public void Click_buttons1() throws IOException {
-        driver.get("http://test.rubywatir.com/radios.php");
-        WebElement radioId = driver.findElement(By.id("radioId"));
-
-        radioId.click();
-        System.out.println("Radio Button with ID Selected");
-    }
-
-    @Test  (priority = 7)
-    public void AfterTest_7() throws IOException {
-        System.out.println("After test7 : Driver close");
-        driver.close();
-    }
-
-
-
-    @AfterTest
-    public void afterTest() {
-        //System.out.println("After test7 : Driver close");
+    @Test  (priority = 5)
+    public void AfterTest() throws IOException {
+        System.out.println("Test5 :All done!");
         //driver.close();
     }
 
+    @AfterTest
+    public void afterTest() {
+        System.out.println("After test7 : Driver close");
+        //driver.close();
+    }
 }
