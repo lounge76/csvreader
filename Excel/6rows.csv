@@ -1,0 +1,6 @@
+﻿TestId,TestName,TestModule,TestType,TestSteps,Action,TestResult,Note
+1234,Login,Dashboard,Regression,1,Open Browser,,
+1234,Login,Dashboard,Regression,2,Enter user name,,
+1234,Login,Dashboard,Regression,3,Enter user password,,
+1234,Login,Dashboard,Regression,4,Click on login button,,
+1234,Login,Dashboard,Regression,5,Verify that Logout link should be displayed,,

@@ -1,10 +1,9 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.List;
+
 /**
  * Created by ryddmo on 2020-06-17.
  */
@@ -38,6 +37,7 @@ public class Base {
             return false;
         }
     }
+/**
     public Boolean waitForIsDisplayed(By locator, Integer... timeout) {
         try {
             waitFor(ExpectedConditions.visibilityOfElementLocated(locator),
@@ -52,6 +52,7 @@ public class Base {
         WebDriverWait wait = new WebDriverWait(driver, timeout);
         wait.until(condition);
     }
+*/
     public WebDriver getDriver() {
         return driver;
     }

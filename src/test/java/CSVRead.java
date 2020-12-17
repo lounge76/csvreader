@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.PrintStream;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -29,7 +29,6 @@ public class CSVRead {
     static WebDriver driver;
     static String text;
 
-    PrintStream o = new PrintStream(new File("./logs/A.txt"));
 
     @BeforeTest
     public void setup() throws Exception {
@@ -72,9 +71,6 @@ public class CSVRead {
         text = driver.findElement(By.xpath("//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/p[3]")).getText();
         System.out.println("Text String is : "+ text);
 
-        // Assign o to output stream
-        System.setOut(o);
-        System.out.println("This will be written to the text file");
     }
 
 
@@ -83,6 +79,10 @@ public class CSVRead {
     @Test  (priority = 4)
     public void csvDataRead() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
+
+
+
+
 
         CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
         String [] csvCell;
@@ -101,6 +101,7 @@ public class CSVRead {
 
             Screenshot screenshot = new AShot().takeScreenshot(driver);
             ImageIO.write(screenshot.getImage(), "png", new File("./Screenshots/screenshot_FILLED_FORM"+System.currentTimeMillis()+".png"));
+            System.out.println("Next line is : " + csvCell[0]);
         }
     }
 
@@ -113,6 +114,6 @@ public class CSVRead {
     @AfterTest
     public void afterTest() {
         System.out.println("After test7 : Driver close");
-        //driver.close();
+        driver.close();
     }
 }
