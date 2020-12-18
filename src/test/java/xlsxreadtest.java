@@ -5,10 +5,12 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
@@ -20,23 +22,25 @@ public class xlsxreadtest {
     static WebDriver driver;
 
 
-    //@BeforeTest
-    //public void setup() throws Exception {
-    //    driver = new HandelDriver().getDriver("CHROME");
-    //    driver.manage().window().maximize();
-    //    driver.manage().deleteAllCookies();
-    //    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    @BeforeTest
+    public void setup() throws Exception {
+        driver = new HandelDriver().getDriver("CHROME");
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         //driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
-    //}
+    }
 
     @Test (priority = 1)
     public void Syns_texten() throws IOException {
         driver.get("http://only-testing-blog.blogspot.com/2014/05/form.html");
-        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
+/*        if (driver.findElement(By.xpath("//a[contains(.,'Only Testing')]")).isDisplayed()) {
             System.out.println("Element is Visible");
         } else {
             System.out.println("Element is InVisible");
         }
+
+ */
     }
 
     @Test (priority = 2)
